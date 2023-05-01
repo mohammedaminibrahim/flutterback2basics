@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -10,15 +9,24 @@ class Dashboard extends StatelessWidget {
     return const Scaffold(
       //appBar: AppBar(title: Text("data").toUpperCase()),
       // backgroundColor: Colors.blueGrey,
-      body: Image(image: AssetImage("images/lady.jpg"),
-      width: 200.0,
-      fit: BoxFit.fill,)
+      body: Center(
+        child: IconButton(
+          onPressed: getNumber,
+          icon: Center(
+            child: Icon(
+                Icons.alt_route_rounded,
+                size: 100,
+                color: Colors.red
+    ),
+          ),
+        ),
+      )
     );
+
   }
 }
 
-
-int getNumber() {
-
-  return Random().nextInt(100);
+int getNumber(){
+  var number = 10;
+  return number;
 }
