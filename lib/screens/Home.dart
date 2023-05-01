@@ -7,8 +7,24 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-     appBar: AppBar(title: Text("Rows and Colums"), centerTitle: true,),
-      body: ,
+      appBar: AppBar(
+        title: Text("Rows and Colums"),
+        centerTitle: true,
+      ),
+      body: Container(
+        child: ListView.builder(
+            itemBuilder: (context, index){
+              return Text(index.toString()
+              );
+            }
+        ),
+      ),
     );
   }
+}
+
+
+int emptyFucn(){
+  var h = 1;
+  return h;
 }
