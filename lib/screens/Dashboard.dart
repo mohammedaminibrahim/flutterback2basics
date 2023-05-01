@@ -10,9 +10,9 @@ class Dashboard extends StatelessWidget {
     return const Scaffold(
       //appBar: AppBar(title: Text("data").toUpperCase()),
       // backgroundColor: Colors.blueGrey,
-      body: Center(
-        child: Text("Random is ${getNumber()}")
-      ),
+      body: Image(image: AssetImage("images/lady.jpg"),
+      width: 200.0,
+      fit: BoxFit.fill,)
     );
   }
 }
